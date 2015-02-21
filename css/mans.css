@@ -1,6 +1,6 @@
 .reveal {
-    color: #222;
-    font-family: "Open Sans", sans-serif;
+  color: #222;
+  font-family: "Open Sans", sans-serif;
 }
 
 .reveal h1,
@@ -9,11 +9,28 @@
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-    font-family: "Bitter", serif;
-    color: #000;
+  font-family: "Bitter", serif;
+
 }
 
-.portada blockquote, .cite blockquote {
+#portada h1 {
+  font-size: 1.5em;
+}
+
+#portada .autores{
+  margin-top: 5%;
+  text-align: right;
+}
+#portada h4 {
+  display: inline-block;
+
+}
+
+#portada small {
+  vertical-align: middle;
+}
+
+#cite blockquote{
   color: #888;
   box-shadow: none;
   background: transparent;
@@ -21,27 +38,10 @@
   font-style: italic;
   width: 90%;
   margin: 1em auto;
-  width: auto;
-  color: #000;
-  text-transform: bold;
-}
-.cite blockquote{
-  text-align: justify;
-}
-.portada h4 {
-  text-align: right;
 }
 
-.portada h4 > p {
-  display: block;
-  margin: 1em auto;
-  font-size: 0.7em;
-  color: #819FF7;
-}
-
-.pull-left { 
-  float: left;
-}
-.pull-right { 
+#cite cite{
+  color: #8181F7;
   float: right;
+  text-align: right;
 }

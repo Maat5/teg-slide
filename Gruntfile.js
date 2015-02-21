@@ -146,7 +146,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-autoprefixer' );
 	grunt.loadNpmTasks( 'grunt-zip' );
-
+	grunt.loadNpmTasks( 'bootstrap' );
 	// Default task
 	grunt.registerTask( 'default', [ 'css', 'js' ] );
 
