@@ -8,36 +8,12 @@ Reveal.addEventListener( 'ready', function( event ) {
     if (event.fragment.id === 'idc-chart') {
       fillIdcChart();
     }
-
+    if (event.fragment.id === 'un-chart') {
+      fillUnChart();
+    }
   });
 
   // IDC chart data
-  /*var data = {
-    labels: [2011, 2012, 2013, 2014, 2015],
-    datasets: [
-    {
-      label: 'Demanda',
-      fillColor: 'rgba(31,119,180, 0.5)',
-      strokeColor: 'rgba(31,119,180, 1)',
-      pointColor: '#165683',
-      pointStrokeColor: '#000',
-      pointHighlightFill: '#000',
-      pointHighlightStroke: 'rgba(220,220,220,1)',
-      data: [510000, 580000, 655000, 740000, 830000]
-    },
-    {
-      label: 'Oferta',
-      fillColor: 'rgba(180,92,31, 0.5)',
-      strokeColor: 'rgba(180,92,31, 1)',
-      pointColor: '#944c19',
-      pointStrokeColor: '#999',
-      pointHighlightFill: '#999',
-      pointHighlightStroke: 'rgba(151,187,205,1)',
-      data: [375000, 400000, 440000, 490000, 530000]
-    }
-    ]
-  };*/
-
   var dataPie = [
     {
         value: 74,
@@ -54,7 +30,23 @@ Reveal.addEventListener( 'ready', function( event ) {
         label: "Juegos",
     },
   ];
-
+  // Instatisfecho data
+  var dataUnChart = [
+    {
+        value: 42,
+        color:"rgba(247,70,74,1)",
+        fillColor : "rgba(247,70,74,1)",
+        highlight: "rgba(247,70,74,1)",
+        label: "No"
+    },
+    {
+        value: 58,
+        color: "rgba(70,191,189,1)",
+        fillColor: "rgba(70,191,189,1)",
+        highlight: "rgba(70,191,189,1)",
+        label: "Si",
+    },
+  ];
 
 
   // Push IDC data into chart
@@ -71,5 +63,17 @@ Reveal.addEventListener( 'ready', function( event ) {
      legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%=': '%><%=segments[i].value%><%='%'%><%}%></li><%}%></ul>"
     });
     document.querySelector('#idc td:last-child').innerHTML = idcChart.generateLegend();
+  }
+  // fPush data to Unsatisfaction chart
+  function fillUnChart() {
+    var unCtx = document.querySelector('#un-chart').getContext('2d');
+    var unChart = new Chart(unCtx).Pie(dataUnChart, {
+      segmentShowStroke : true,
+      animationSteps : 100,
+      animationEasing : "easeOutBounce",
+      animateRotate : true,
+     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%=': '%><%=segments[i].value%><%='%'%><%}%></li><%}%></ul>"
+    });
+    document.querySelector('#problem td:last-child').innerHTML = unChart.generateLegend();
   }
 });
