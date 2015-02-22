@@ -49,7 +49,7 @@
   text-align: right;
 }
 
-#nest-introduccion p, #nest-problem p {
+#nest-introduccion p, #nest-problem p, #problem p{
   text-align: justify;
 }
 
