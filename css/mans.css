@@ -49,6 +49,6 @@
   text-align: right;
 }
 
-#nest-introduccion p {
+#nest-introduccion p, #nest-problem p {
   text-align: justify;
 }

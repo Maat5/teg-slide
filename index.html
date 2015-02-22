@@ -69,16 +69,21 @@
 				<!-- Example of nested vertical slides -->
 				<section id="nested">
 					<section id="nest-introduccion">
-						<h2>INTRODUCCIÓN</h2>
+						<h2>Introducción</h2>
 						<hr>
 						<p>La tecnología se ha vuelto completamente cotidiana y accesible para las personas, antes era limitado el numero de personas que poseían y tenían el conocimiento de como usar una computadora.</p>
 						<p> Ahora con los nuevos avances en las TIC, las personas se encuentran la capacidad de llevar una computadora en la palma de sus manos, en forma de <em>smartphones</em> [...]</p>
 						<br>
 					</section>
-					<section>
-						<h2>El Problema</h2>
+					<section id="idc">
+						<h2><em>Usuarios de Smartphones</em></h2>
 						<hr>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<table class="fragment roll-in">
+							<tr>
+								<td><canvas id="idc-chart" class="fragment" width="1000" height="500"></canvas></td>
+								<td><div id="legend-container"></div></td>
+							</tr>
+						</table>
 					</section>
 					<section>
 						<h2>Basement Level 2</h2>
@@ -388,7 +393,8 @@ Reveal.addEventListener( 'customevent', function() {
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
+		<script src="js/Chart.min.js"></script>
+		<script src="js/mans.js"></script>
 		<script>
 
 			// Full list of configuration options available at:
