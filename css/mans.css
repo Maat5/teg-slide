@@ -52,3 +52,20 @@
 #nest-introduccion p, #nest-problem p {
   text-align: justify;
 }
+
+#idc table td ul {
+  list-style: none;
+  vertical-align: center;
+}
+#idc table td ul li{
+  display: inline-block;
+  width: 100%;
+  margin: 5px auto;
+}
+#idc table td ul.pie-legend span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  vertical-align: middle;
+}
