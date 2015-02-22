@@ -23,11 +23,12 @@
 }
 #portada h4 {
   display: inline-block;
-
+  color: #8181F7;
 }
 
 #portada small {
   vertical-align: middle;
+  color: #888;
 }
 
 #cite blockquote{
