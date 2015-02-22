@@ -126,7 +126,7 @@ module.exports = function(grunt) {
 				tasks: 'css-themes'
 			},
 			css: {
-				files: [ 'css/reveal.scss' ],
+				files: [ 'css/reveal.scss', 'css/mans.css' ],
 				tasks: 'css-core'
 			},
             html: {
@@ -146,7 +146,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-autoprefixer' );
 	grunt.loadNpmTasks( 'grunt-zip' );
-	grunt.loadNpmTasks( 'bootstrap' );
+
 	// Default task
 	grunt.registerTask( 'default', [ 'css', 'js' ] );
 

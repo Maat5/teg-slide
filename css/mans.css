@@ -29,10 +29,11 @@
 #portada small {
   vertical-align: middle;
   color: #888;
+  /*color: #CEECF5;*/
 }
 
 #cite blockquote{
-  color: #888;
+  /*color: #CEECF5;*/
   box-shadow: none;
   background: transparent;
   font-family: "Bitter", serif;
@@ -43,6 +44,11 @@
 
 #cite cite{
   color: #8181F7;
+  /*color:#CEECF5;*/
   float: right;
   text-align: right;
+}
+
+#nest-introduccion p {
+  text-align: justify;
 }
