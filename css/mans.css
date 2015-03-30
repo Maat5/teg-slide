@@ -49,7 +49,7 @@
   text-align: right;
 }
 
-#nest-introduccion p, #nest-problem p, #problem p, #form-prob p ,#objetives p{
+#nest-introduccion p, #nest-problem p, #problem p, #form-prob p ,#objetives p, #recom p{
   text-align: justify;
 }
 
@@ -78,17 +78,17 @@ table td ul.pie-legend span {
    color: #8181F7;
 }
 
-#objetives ul, #justify ul {
+#objetives ul, #justify ul, #conclu ul, #recom ul  {
   text-align: justify;
   list-style: none;
 }
 
-#objetives ul li, #justify ul li {
+#objetives ul li, #justify ul li, #conclu ul li, #recom ul li {
   margin: 10px auto;
   padding: 1%;
 }
 
-#objetives ul span, #justify ul span {
+#objetives ul span, #justify ul span, #conclu ul span, #recom ul span{
   background-color: rgba(70,191,189,0.4);
   display: inline-block;
   border-radius: 5px;
