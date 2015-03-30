@@ -78,17 +78,17 @@ table td ul.pie-legend span {
    color: #8181F7;
 }
 
-#objetives ul {
+#objetives ul, #justify ul {
   text-align: justify;
   list-style: none;
 }
 
-#objetives ul li {
+#objetives ul li, #justify ul li {
   margin: 10px auto;
   padding: 1%;
 }
 
-#objetives ul span {
+#objetives ul span, #justify ul span {
   background-color: rgba(70,191,189,0.4);
   display: inline-block;
   border-radius: 5px;
