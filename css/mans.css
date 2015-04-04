@@ -83,18 +83,18 @@ table td ul.pie-legend span {
 }
 
 #objetives ul, #justify ul, #conclu ul, #recom ul, #concept-mobile-app ul, 
-#characteristics-mobile-app ul, #users-mobile-app ul, #objetives-mobile-app ul  {
+#characteristics-mobile-app ul, #users-mobile-app ul, #objetives-mobile-app ul, #type ul {
   list-style: none;
 }
 
 #objetives ul li, #justify ul li, #conclu ul li, #recom ul li, #concept-mobile-app ul li, 
-#characteristics-mobile-app ul li, #users-mobile-app ul li, #objetives-mobile-app ul li {
+#characteristics-mobile-app ul li, #users-mobile-app ul li, #objetives-mobile-app ul li, #type ul li {
   margin: 15px auto;
   padding: 1%;
 }
 
 #objetives ul span, #justify ul span, #conclu ul span, #recom ul span, #concept-mobile-app ul span, 
-#characteristics-mobile-app ul span, #users-mobile-app ul span, #objetives-mobile-app ul span {
+#characteristics-mobile-app ul span, #users-mobile-app ul span, #objetives-mobile-app ul span, #type ul span {
   background-color: rgba(70,191,189,0.4);
   display: inline-block;
   border-radius: 5px;
