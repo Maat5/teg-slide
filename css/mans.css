@@ -1,6 +1,9 @@
+body {
+  /*background-color: #e3f2fd;*/
+}
 .reveal {
   color: #222;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .reveal h1,
@@ -9,10 +12,11 @@
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  font-family: "Bitter", serif;
-
+  font-family: 'Roboto Condensed', sans-serif;
 }
-
+hr {
+  border-color: #2196f3 ;
+}
 #portada h1 {
   font-size: 1.5em;
 }
@@ -20,16 +24,20 @@
 #portada .autores{
   margin-top: 5%;
   text-align: right;
+
 }
 #portada h4 {
   display: inline-block;
   color: #8181F7;
+  color: #2196f3;
+
 }
 
 #portada small {
   vertical-align: middle;
   color: #888;
   /*color: #CEECF5;*/
+
 }
 
 .cite blockquote{
@@ -43,8 +51,10 @@
 }
 
 .cite cite{
-  color: #8181F7;
-  /*color:#CEECF5;*/
+  /*color: #8181F7;
+  color:#CEECF5;*/
+  color: #2196f3;
+
   float: right;
   text-align: right;
 }
@@ -53,21 +63,43 @@
   text-align: justify;
 }
 
-table td ul {
+/*table td ul {
   list-style: none;
   vertical-align: center;
 }
-table td ul li{
+ul li{
   display: inline-block;
   width: 100%;
   margin: 5px auto;
+}*/
+
+li{
+  list-style: none;
+  vertical-align: middle;
 }
-table td ul.pie-legend span {
+.pie-legend span, .bar-legend span  {
   display: inline-block;
   width: 20px;
   height: 20px;
   margin: 10px;
   vertical-align: middle;
+}
+
+/*
+table td ul.bar-legend span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  vertical-align: middle;
+}*/
+table{
+  text-align: center;
+  border: 
+}
+table thead, table tr:last-child{
+  background: #2196f3; 
+  color: #FFF;
 }
 
 .text-left{
@@ -79,23 +111,27 @@ table td ul.pie-legend span {
 }
 
 .t-blue {
-   color: #8181F7;
+   /*color: #8181F7;*/
+   color: #2196f3;
 }
 
 #objetives ul, #justify ul, #conclu ul, #recom ul, #concept-mobile-app ul, 
-#characteristics-mobile-app ul, #users-mobile-app ul, #objetives-mobile-app ul, #type ul {
+#characteristics-mobile-app ul, #users-mobile-app ul, #objetives-mobile-app ul, #type ul, #requeriments1 ul, #requeriments2 ul, #requeriments3 ul, #interfazUser ul{
   list-style: none;
 }
 
 #objetives ul li, #justify ul li, #conclu ul li, #recom ul li, #concept-mobile-app ul li, 
-#characteristics-mobile-app ul li, #users-mobile-app ul li, #objetives-mobile-app ul li, #type ul li {
+#characteristics-mobile-app ul li, #users-mobile-app ul li, #objetives-mobile-app ul li, #type ul li, #requeriments1 ul li, #requeriments2 ul li, #requeriments3 ul li, #interfazUser ul li {
   margin: 15px auto;
   padding: 1%;
 }
 
 #objetives ul span, #justify ul span, #conclu ul span, #recom ul span, #concept-mobile-app ul span, 
-#characteristics-mobile-app ul span, #users-mobile-app ul span, #objetives-mobile-app ul span, #type ul span {
-  background-color: rgba(70,191,189,0.4);
+#characteristics-mobile-app ul span, #users-mobile-app ul span, #objetives-mobile-app ul span, #type ul span, #requeriments1 ul span, #requeriments2 ul span, #requeriments3 ul span, #interfazUser ul span {
+  /*color:;
+
+  background-color: rgba(70,191,189,0.4);*/
+  background-color:  #2196f3;
   display: inline-block;
   border-radius: 5px;
   height: 20px;

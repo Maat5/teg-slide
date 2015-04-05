@@ -14,9 +14,14 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
+
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
 
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" >
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css" >
 		<!-- own style-->
 	  <link rel="stylesheet" href="css/mans.css" id="theme">
 		<!-- Code syntax highlighting -->
@@ -79,12 +84,13 @@
 					<section id="idc">
 						<h2><em>Usuarios de Smartphones</em></h2>
 						<hr>
-						<table class="fragment roll-in">
-							<tr>
-								<td><canvas id="idc-chart" class="fragment" width="800" height="500"></canvas></td>
-								<td><div id="legend-container"></div></td>
-							</tr>
-						</table>
+
+
+						<div class="row">
+							<canvas id="idc-chart" class="fragment col-md-7" width="800" height="500"></canvas>
+							<div id="legend-container" class="col-md-4"></div>	
+						</div>
+			
 					<aside class="notes">
 							<p> Claro ejemplo se encuentra en la siguiente gráfica, donde los 1.08 billones de smartphones activos en el mundo, el 76%  de  sus usuarios, lo utilizan mayormente como una herramienta, mientras que el 24% restante lo utiliza como medio de entretenimiento.</p>
 					</aside>						
@@ -103,7 +109,7 @@
 
 
 				<section id="form-prob">
-					<h2>Formulacion del Problema</h2>
+					<h2>Formulación del Problema</h2>
 					<hr>
 					<p class="fragment roll-out">
 						¿Qué tecnologías pueden ser aplicadas para mejorar la experiencia del usuario con
@@ -144,7 +150,7 @@
 				<section id="justify">
 					<h2>Justificación</h2>
 					<hr>
-					<ul>
+					<ul class="text-right">
 						<li class="fragment roll-in">
 						<span>&nbsp;</span>
 						Acceso directo a la intranet de la UNITEC desde cualquier dispositivo portátil con sistema operativo Android.
@@ -168,7 +174,7 @@
 				<section id="type">
 					<h2>Tipo de Investigación</h2>
 					<hr>
-					<ul>
+					<ul class="pull-left">
 						<li class="fragment roll-in"> <span>&nbsp;</span> Proyecto factible</li>
 						<li class="fragment roll-in"> <span>&nbsp;</span> Investigación de campo</li>
 					</ul>
@@ -188,9 +194,9 @@
 					</aside>
 					</section>
 					<section id="pop">
-						<table class="fragment roll-in">
+						<table class="text-justify fragment roll-in ">
 							<thead>						
-								<th>Poblacion</th>
+								<th>Población</th>
 								<th>Cantidad</th>
 							</thead>
 							<tbody>
@@ -250,7 +256,6 @@
 					<section id="most">
 						<h2>Muestra</h2>
 						<hr>
-						<p class="fragment roll-in">Poner imagen de formula</p>
 						<img src="img/imagen_formula.png">
 					<aside class="notes">
 						<p>
@@ -364,47 +369,50 @@
 
 					<section id="item1">
 						<h2>Item 1<hr></h2>
-						<table>
+						<!--table>
 							<tr>
 								<td><canvas id="un-chart" class="fragment" width="800" height="500"></canvas></td>
 								<td><div id="legend-container"></div></td>
 							</tr>
-						</table>						
+						</table-->	
+						<div class="row">
+							<canvas id="un-chart" class="fragment col-md-8" width="800" height="500"></canvas>
+							<div id="legend-container" class="col-md-3"></div>	
+						</div>
+			
 					</section>
 
 					<section id="item3-6">
 						<h2>Items 3, 4, 5, 6<hr></h2>
-						<table>
-							<tr>
-								<td><canvas id="dos-chart" class="fragment" width="1200" height="500"></canvas></td>
-								<td><div id="legend-container"></div></td>
-							</tr>
-						</table>	
+						<div class="row">
+							<canvas id="dos-chart" class="fragment col-md-8" width="800" height="500"></canvas>
+							<div id="legend-container" class="col-md-3"></div>	
+						</div>
 					</section>
 
 					<section id="item7">
 						<h2>Item 7<hr></h2>
-						<table>
-							<tr>
-								<td><canvas id="tres-chart" class="fragment" width="800" height="500"></canvas></td>
-								<td><div id="legend-container"></div></td>
-							</tr>
-						</table>	
+						<div class="row">
+							<canvas id="tres-chart" class="fragment col-md-8" width="800" height="500"></canvas>
+							<div id="legend-container" class="col-md-3"></div>	
+						</div>
 					</section>
 
 					<section id="item8">
 						<h2>Item 8<hr></h2>
-						<table>
-							<tr>
-								<td><canvas id="four-chart" class="fragment" width="800" height="500"></canvas></td>
-								<td><div id="legend-container"></div></td>
-							</tr>
-						</table>	
+						<div class="row">
+							<canvas id="four-chart" class="fragment col-md-6" width="800" height="500"></canvas>
+							<div id="legend-container" class="col-md-6"></div>	
+						</div>
 					</section>
 
 					<section id="item12">
 						<h2>Item 12<hr></h2>
-						<h4>Grafica del Item 12</h4>
+						<div class="row">
+							<canvas id="five-chart" class="fragment col-md-8" width="800" height="500"></canvas>
+							<div id="legend-container" class="col-md-3"></div>	
+						</div>
+
 					</section>
 
 				</section>
@@ -417,7 +425,7 @@
 
 					<section id="concept-mobile-app">
 						<h2>Concepto de la aplicación móvil. <hr></h2>
-						<ul>
+						<ul class="pull-left">
 							<li class="fragment roll-in"><span></span> Interacción con los usuarios</li>
 							<li class="fragment roll-in"><span></span> Gestion de la intranet</li>
 							<li class="fragment roll-in"><span></span> Seguimiento de la información</li>
@@ -450,7 +458,7 @@
 
 					<section id="characteristics-mobile-app">
 						<h2>Características de la aplicación móvil.<hr></h2>
-						<ul>
+						<ul class="pull-left">
 							<li class="fragment roll-in"><span></span> Innovación</li>
 							<li class="fragment roll-in"><span></span> Precisión</li>
 							<li class="fragment roll-in"><span></span> Diseño</li>
@@ -476,7 +484,7 @@
 
 					<section id="users-mobile-app">
 						<h2>Alcance de la aplicación móvil.<hr></h2>
-						<ul>
+						<ul class="pull-left">
 							<li class="fragment roll-in"><span></span> Usuarios directos:</li>
 							<ol>
 								<li class="fragment roll-in">Estudiantes</li>
@@ -500,17 +508,81 @@
 
 					<section id="objetives-mobile-app">
 						<h2>Objetivos de la aplicación móvil.<hr></h2>
-						<ul>
+						<ul class="pull-left">
 							<li class="fragment roll-in"><span></span> Definir el contenido que se podrá encontrar en la aplicación móvil para determinar la visualización de los mismos.</li>
 							<li class="fragment roll-in"><span></span> Diseñar una interfaz gráfica con un diseño innovador y adaptable a cualquier dispositivo para ofrecer una nueva experiencia al usuario.</li>
 							<li class="fragment roll-in"><span></span> Desarrollar un prototipo funcional mediante las distintas tecnologías de desarrollo web e incorporarlas con PhoneGap  para su correcto funcionamiento.</li>
 						</ul>
 					</section>
 
-					<section>
-						
-						<h2>Aqui va la parte de Mans</h2>
+					<section id="requeriments1">
+						<h3>Requerimientos de la aplicación móvil.<hr></h3>
+						<ul class="pull-left">
+							<li class="fragment roll-in"><span></span> Requerimientos Funcionales</li>
+							<li class="fragment roll-in"><span></span> Requerimientos No Funcionales.</li>
+						</ul>
+						<aside class="notes">
+							<p>Se considieran como coracterisiticas y/o restricciones que debe de poseer la apliacacion movil, para cumplir con el sello de calidad de UNITEC, por lo que se procede  a determinar cuales son los  </p>
+						</aside>
+					</section>
 
+					<section id="requeriments2">
+						<h2>Requerimientos Funcionales.<hr></h2>
+						<ul class="pull-left">
+							<li class="fragment roll-in"><span></span> Validación de Usuarios.</li>
+							<li class="fragment roll-in"><span></span> Docentes.</li>
+							<li class="fragment roll-in"><span></span> Alumnos.</li>
+
+						</ul>
+						<aside class="notes">
+							<ol>
+							   <li>Donde Se realizan las validaciones necesarias, para inicio/cierre sesion, existencia y rol</li>
+							   <li>4 submodulos basicos, insercion de notas, busqueda de notas,ver horario y modf datos personales</li>
+							   <li>igual, 4 submodulos, ver notas, ver horario, modf datos, solicitudes taquilla unica</li>
+							</ol>
+						</aside>
+					</section>
+
+					<section id="requeriments3">
+						<h2>Requerimientos No Funcionales.<hr></h2>
+						<ul class="pull-left">
+							<li class="fragment roll-in"><span></span> Modelamiento logico de la BD Relacional.</li>
+							<li class="fragment roll-in"><span></span> Flujo de datos e información.</li>
+							<li class="fragment roll-in"><span></span> Diagramas de caso de uso.</li>
+							<li class="fragment roll-in"><span></span> Comportamiento entre la interacción del usuario, aplicación y BD.</li>
+						</ul>
+						<aside class="notes">
+							<p>>Actividades donde el usuario no esta involucrado directamente con la funcionalidad del sistema</p
+						</aside>
+					</section>
+
+					<section id="interfazUser">
+						<h2>Diseño de la Interfaz de Usuario.<hr></h2>
+						<div class="row">
+							<ul class="pull-left col-md-7">
+								<li class="fragment roll-in"><span></span> Responsive Web Design.</li>
+								<li class="fragment roll-in"><span></span> Material Design</li>
+								<li class="fragment roll-in"><span></span> Diseño Fluido</li>
+								<li class="fragment roll-in"><span></span> Media Queries</li>
+							</ul>		
+
+						<p class="fragment roll-in col-md-4 text-justify">Mobile First: Consiste  en diseñar primero para  dispositivos moviles y luego adaptar el contenido a las demas resoluciones y equipos que lo necesiten.</p>					
+						</div>
+
+
+						<aside class="notes">
+							<p>Para que el contenido se adapde a cualquier dispositivos, se utilizan 2 factores claves, el diseno fluido y los media queiries , pero principalmente la metodologia del senor LUKE Wreblewsky</p>
+						</aside>
+					</section>
+
+					<section id="desarrolloApp">
+						<h3>Desarrollo de la aplicación Prototipo<hr></h3>
+						<img src="img/Capas.png" alt="" width="600px" height="550px">
+						<aside class="notes">
+							<p class="fragment roll-in">
+							Phonegap es la encargada de hacer el procesamiento de la interfaz grafica y el procesamiento de contenido mediante la interpretacion  de los lenguajes de desarollo web, como HTML, CSS, Js, ejerciendo tambien una comunicacion constante con el la capa de BD mediante el uso de controladores establecidos mediante PHP, creando un ecosistema fluido entre aplicacion y contenido.
+						</p>
+						</aside>
 					</section>
 				</section>
 				
@@ -566,31 +638,22 @@
 							</ol>
 						</aside>
 					</section>
+					<section>
+						<h1> GRACIAS. <hr></h1>	
+					</section>
 				</section>
 				<section>
-					<h2>Preguntas y Respuestas<hr></h2>
+					<h2>Preguntas y Respuestas <hr></h2>
 				</section>
-				<section id="interr">
-					<h2> Interrogantes</h2>
-					<hr>
-					<p class="fragment">
-						¿Considera usted que la UNITEC se ve en la necesidad de desarrollar una aplicación móvil?
-					</p>
-					<table class="fragment roll-in">
-						<tr>
-							<td><canvas id="bar-chart1" class="fragment" width="800" height="450"></canvas></td>
-							<td><div id="legend-container"></div></td>
-						</tr>	
-					</table>
-				</section>
-				
 			</div>
 
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-		<script src="js/Chart.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="js/Chart.js"></script>
 		<script src="js/mans.js"></script>
 		<script>
 
