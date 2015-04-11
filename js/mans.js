@@ -221,10 +221,10 @@ Reveal.addEventListener( 'ready', function( event ) {
       data: [76]
     },
     {
-      label: 'Notas de Evaluaciones',
+      label: 'Recursos en linea',
       fillColor: '#f57c00',
       strokeColor: '#f57c00',
-      data: [87],
+      data: [39],
     }
     ]
   };
