@@ -33,16 +33,16 @@ Reveal.addEventListener( 'ready', function( event ) {
   var dataPie = [
     {
       value: 76,
-      color:"rgba(247,70,74,1)",
-      fillColor : "rgba(247,70,74,0.5)",
-      highlight: "rgba(247,70,74,1)",
+      color:'#d32f2f',
+      fillColor : '#d32f2f',
+      highlight: '#d32f2f',
       label: "Herramientas"
     },
     {
       value: 24,
-      color: "rgba(70,191,189,1)",
-      fillColor: "rgba(70,191,189,0.5)",
-      highlight: "rgba(70,191,189,1)",
+      color:'#1565c0',
+      fillColor:'#1565c0' ,
+      highlight:'#1565c0',
       label: "Juegos",
     },
   ];
@@ -64,18 +64,18 @@ Reveal.addEventListener( 'ready', function( event ) {
   var dataUnChart = [
     {
         value: 42,
-        color:"rgba(247,70,74,1)",
-        fillColor : "rgba(247,70,74,0.5)",
-        highlight: "rgba(247,70,74,1)",
+        color:'#d32f2f',
+        fillColor : '#d32f2f',
+        highlight: '#d32f2f',
         label: "Si",
         labelColor : 'white',
         labelFontSize : '16'
     },
     {
         value: 58,
-        color: "rgba(70,191,189,1)",
-        fillColor: "rgba(70,191,189,0.5)",
-        highlight: "rgba(70,191,189,1)",
+        color:'#1565c0',
+        fillColor:'#1565c0' ,
+        highlight:'#1565c0',
         label: "No",
         labelColor : 'white',
         labelFontSize : '16'
@@ -132,21 +132,13 @@ Reveal.addEventListener( 'ready', function( event ) {
     labels: ['Item 3', 'Item 4', 'Item 5', 'Item 6'],
     datasets: [
     {
-      fillColor: 'rgba(70,191,189,1)',
-      strokeColor: 'rgba(70,191,189,1)',
-      pointColor: '#165683',
-      pointStrokeColor: '#000',
-      pointHighlightFill: '#000',
-      pointHighlightStroke: 'rgba(31,119,180,)',
+      fillColor: '#1565c0',
+      strokeColor: '#1565c0',
       data: [96,98,87,67]
     },
     {
-      fillColor: 'rgba(247,70,74,1)',
-      strokeColor: 'rgba(247,70,74,1)',
-      pointColor: '#165683',
-      pointStrokeColor: '#000',
-      pointHighlightFill: '#000',
-      pointHighlightStroke: 'rgba(31,119,180,)',
+      fillColor : '#d32f2f',
+      strokeColor: '#d32f2f',
       data: [4,2,13,33]
     }
     ]
@@ -163,24 +155,24 @@ Reveal.addEventListener( 'ready', function( event ) {
       legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].labels%><%}%></li><%}%></ul>"
 
     });
-    document.querySelector('#item3-6 #legend-container').innerHTML = dataChart.generateLegend();
+    //document.querySelector('#item3-6 #legend-container').innerHTML = dataChart.generateLegend();
   } 
 
   var dataTresChart = [
     {
         value: 85,
-        color:"rgba(247,70,74,1)",
-        fillColor : "rgba(247,70,74,0.5)",
-        highlight: "rgba(247,70,74,1)",
+        color:'#d32f2f',
+        fillColor : '#d32f2f',
+        highlight: '#d32f2f',
         label: "Si",
         labelColor : 'white',
         labelFontSize : '16'
     },
     {
         value: 15,
-        color: "rgba(70,191,189,1)",
-        fillColor: "rgba(70,191,189,0.5)",
-        highlight: "rgba(70,191,189,1)",
+        color:'#1565c0',
+        fillColor:'#1565c0' ,
+        highlight:'#1565c0',
         label: "No",
         labelColor : 'white',
         labelFontSize : '16'
@@ -212,26 +204,26 @@ Reveal.addEventListener( 'ready', function( event ) {
     datasets: [
     {
       label: 'Notas Evaluaciones',
-      fillColor: 'green',
-      strokeColor: 'rgba(31,119,180, 1)',
+      fillColor: '#388e3c',
+      strokeColor: '#388e3c',
       data: [87]
     },
     {
       label: 'Pre-Inscripcion Asignaturas',
-      fillColor: 'red',
-      strokeColor: 'rgba(180,92,31, 1)',
+      fillColor: '#d32f2f',
+      strokeColor: '#d32f2f',
       data: [56]
     },
     {
       label: 'Mi Horario',
-      fillColor: 'blue',
-      strokeColor: 'rgba(31,119,180, 1)',
+      fillColor: '#1976d2',
+      strokeColor: '#1976d2',
       data: [76]
     },
     {
       label: 'Notas de Evaluaciones',
-      fillColor: 'orange',
-      strokeColor: 'rgba(180,92,31, 1)',
+      fillColor: '#f57c00',
+      strokeColor: '#f57c00',
       data: [87],
     }
     ]
@@ -252,18 +244,18 @@ Reveal.addEventListener( 'ready', function( event ) {
   var fiveChart = [
     {
         value: 74,
-        color:"rgba(247,70,74,1)",
-        fillColor : "rgba(247,70,74,0.5)",
-        highlight: "rgba(247,70,74,1)",
+        color:"#d32f2f",
+        fillColor : "#d32f2f",
+        highlight: "#d32f2f",
         label: "Si",
         labelColor : 'white',
         labelFontSize : '16'
     },
     {
         value: 26,
-        color: "rgba(70,191,189,1)",
-        fillColor: "rgba(70,191,189,0.5)",
-        highlight: "rgba(70,191,189,1)",
+        color: "#1976d2",
+        fillColor: "#1976d2",
+        highlight: "r#1976d2",
         label: "No",
         labelColor : 'white',
         labelFontSize : '16'
