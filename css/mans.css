@@ -98,6 +98,8 @@ table td ul.bar-legend span {
 }
 .reveal table thead th, .reveal table tbody tr td.num-center{
   text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 table thead, table tr:last-child{
   background: #2196f3; 
