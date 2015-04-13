@@ -129,7 +129,7 @@ Reveal.addEventListener( 'ready', function( event ) {
   }
    // Bar Data chart
   var dosBar = {
-    labels: ['Item 3', 'Item 4', 'Item 5', 'Item 6'],
+    labels: ['¿Posee un dispositivo teléfono móvil inteligente?', '¿Usa su dispositivo móvil?', '¿Lo usa para seguir la información de la Universidad?', '¿Lo usa para utilizar la intranet?'],
     datasets: [
     {
       fillColor: '#1565c0',
@@ -209,16 +209,16 @@ Reveal.addEventListener( 'ready', function( event ) {
       data: [87]
     },
     {
-      label: 'Pre-Inscripcion Asignaturas',
-      fillColor: '#d32f2f',
-      strokeColor: '#d32f2f',
-      data: [56]
-    },
-    {
       label: 'Mi Horario',
       fillColor: '#1976d2',
       strokeColor: '#1976d2',
       data: [76]
+    },
+    {
+      label: 'Pre-Inscripcion Asignaturas',
+      fillColor: '#d32f2f',
+      strokeColor: '#d32f2f',
+      data: [56]
     },
     {
       label: 'Recursos en linea',
