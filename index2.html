@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>TEG II - Abrante , Gonzalez </title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" >
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css" >
+		<!-- own style-->
+	  <link rel="stylesheet" href="css/mans.css" id="theme">
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+			
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal" id="mansSlide">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides container-fluid" >
+				<section class="wrapper row text-center" id="portada">
+				
+					<h1>
+						Diseño de Aplicación para Dispositivos Móviles Inteligentes con Sistema Operativo Android
+					</h1>
+					<hr>
+				  <div class="autores">
+						<h4> Abrante T, Manuel A.  <br>  <small>C.I: 22.224.963</small> </h4>
+					 	<br>
+					 	<h4> Gonzalez S, Roger A. <br>  <small> C.I: 24.296.021 </small>	</h4>
+				  </div>
+				</section>
+
+				<section class="cite">
+					<blockquote >
+						<p>“Para vivir, aprender y trabajar con éxito en una sociedad cada vez más compleja, rica en información y basada en el conocimiento, los estudiantes y los docentes deben utilizar la tecnología con eficacia.”</p>
+					</blockquote>
+
+					<h4 class="pull-right">
+						<p><cite>- UNESCO</cite></p>
+					</h4>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section id="nested">
+					<section id="nest-introduccion">
+						<h2>Introducción</h2>
+						<hr>
+						<p>La tecnología se ha vuelto completamente cotidiana y accesible, antes el número de persona que poseían y tenían conocimiento de como usar una computadora , era limitado. [...]</p>
+					
+					<aside class="notes">
+						<p> Con los nuevos avances en las TIC, las personas se encuentran en la capacidad de llevar equipos de computación con gran capacidad de procesamiento en la palma de sus manos en forma de teléfonos inteligente Si se le suma el acceso a internet , se convierte en una herramienta con la capacidad de brindar gran cantidad de información y facilitar tareas comunes. </p>
+					</aside>
+					</section>
+					<section id="idc">
+						<h2><em>Usuarios de Smartphones</em></h2>
+						<hr>
+
+
+						<div class="row">
+							<canvas id="idc-chart" class="fragment col-md-7" width="800" height="500"></canvas>
+							<div id="legend-container" class="col-md-4"></div>	
+						</div>
+			
+					<aside class="notes">
+							<p> Claro ejemplo se encuentra en la siguiente gráfica, donde los 1.08 billones de smartphones activos en el mundo, el 76%  de  sus usuarios, lo utilizan mayormente como una herramienta, mientras que el 24% restante lo utiliza como medio de entretenimiento.</p>
+					</aside>						
+					</section>
+				</section>
+				
+				<section id="problem">
+					<h2>El Problema</h2>
+					<hr>
+					<p>	Muchas Universidades a nivel internacional y nacional, han aplicado plataformas amigables para los teléfonos inteligentes, asi su personal y estudiantes, tienen la capacidad de ingresar a las intranet y realizar tramites y consultas. </p>
+					<br>
+					<aside class="notes">
+					<p> Resalta en desactualizacion en el ambito tecnologico de UNITEC, ya que hoy en dia no cuenta con la disponibilidad de una platadorma que brinde una experiencia gratificante para todos sus usuarios.</p>
+					</aside>
+				</section>
+
+
+				<section id="form-prob">
+					<h2>Formulación del Problema</h2>
+					<hr>
+					<p class="fragment roll-out">
+						¿Qué tecnologías pueden ser aplicadas para mejorar la experiencia del usuario con
+							respecto al uso de la intranet de la Universidad Tecnológica del Centro?</a>.
+					</p>
+				</section>
+
+				<section id="objetives">
+					<section>
+						<h2>Objetivos</h2>
+						<hr>
+						<h4 class="text-left fragment"><strong class="t-blue">Objetivo General</strong></h4>
+						<p class="fragment roll-in">Proponer el diseño de una aplicación para dispositivos móviles inteligentes que	cuente con el Sistema Operativo Android, el cual permita el acceso a la intranet de la Universidad Tecnológica del Centro para consumo exclusivo de su cuerpo docente y estudiantil
+						</p>						
+					</section>
+					<section>
+						<h2>Objetivos</h2>
+						<hr>
+						<h4 class="text-left fragment"><strong class="t-blue">Objetivos Específicos</strong></h4>
+						<ul>
+							<li class="fragment roll-in">
+								<span>&nbsp;</span>
+								Diagnosticar el grado de utilidad que tendrá el diseño de una aplicación móvil
+								para la Universidad Tecnológica del Centro [...]
+							</li>
+							<li class="fragment roll-in">
+								<span>&nbsp;</span>
+								Determinar los requerimientos necesarios con el objeto de desarrollar una 
+								aplicación móvil a través del análisis de los procesos informáticos existentes [...]
+							</li>
+							<li class="fragment roll-in">
+								<span>&nbsp;</span>
+								Diseñar una aplicación móvil que cumpla con los requerimientos de sistemas mediante el modelado lógico y físico de los datos.
+							</li>
+						</ul>
+						<aside class="notes">
+							<ol>
+								<li>... mediante técnicas de recolección de datos</li>
+								<li>... en la Universidad Tecnológica del Centro</li>
+							</ol>
+						</aside>
+					</section>
+				</section>
+				<section id="justify">
+					<h2>Justificación</h2>
+					<hr>
+					<ul class="text-right">
+						<li class="fragment roll-in">
+						<span>&nbsp;</span>
+						Acceso directo a la intranet de la UNITEC desde cualquier dispositivo portátil con sistema operativo Android.
+						</li>
+						<li class="fragment roll-in">
+						<span>&nbsp;</span>
+						Repunte en la cantidad de usuarios de la intranet UNITEC.
+						</li>
+						<li class="fragment roll-in">
+						<span>&nbsp;</span>
+						UNITEC entraría en el campo de la innovación tecnológica y de servicio al usuario.
+						</li>
+					</ul>
+					<aside class="notes">
+						<p>Punto 2: Eso se traduciría en alumnos más empapados y comprometidos con el quehacer académico y programático de su Alma Mater. </p>
+
+						<p>Punto 3: Ofreciendo a otras casas de estudio la posibilidad de adaptar la aplicación móvil objeto de estudio del presente Trabajo Especial de Grado, lo que situaría a la universidad como un piloto en la incorporación de tecnologías móviles para la satisfacción de las necesidades estudiantiles, trayendo consigo un repunte de la reputación de la institución.</p>
+					</aside>
+				</section>
+
+				<section id="type">
+					<h2>Tipo de Investigación</h2>
+					<hr>
+					<ul class="pull-left">
+						<li class="fragment roll-in"> <span>&nbsp;</span> Proyecto factible</li>
+						<li class="fragment roll-in"> <span>&nbsp;</span> Investigación de campo</li>
+					</ul>
+					<aside class="notes">
+						<p>La presente investigacion se encuentra bajo el criterio de proyecto factible de acuerdo a su nivel de analis</p>
+						<p>y segun su forma de recolecion de datos, es situado en la modalidad de investigacion de campo</p>
+					</aside>
+				</section>
+
+				<section id="nested">
+					<section id="pop">
+						<h2>Población</h2>
+						<hr>
+					<aside class="notes">
+						<p>
+						Se define la poblacion de estudiantes en una cantidad de 2600 alumnos, distribuidos en sus 2 sedes, dividivo en 10 carreras, las cuales 5 pertenecen al area de ingeneria, 4 al area de gerencia y 1 restante al area de contaduria publica.</p>
+					</aside>
+					</section>
+					<section id="pop">
+						<table class="text-justify fragment roll-in ">
+							<thead>						
+								<th>Población</th>
+								<th>Cantidad</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Ingeniería en Información</td>
+									<td class="num-center">248</td>
+								</tr>
+								<tr>																
+									<td>Ingeniería en Mecánica</td>
+									<td class="num-center">315</td>
+								</tr>	
+								<tr>																
+									<td>Ingeniería en Redes y Comunicaciones</td>
+									<td class="num-center">402</td>
+								</tr>
+								<tr>
+									<td>Ingeniería en Eléctrica</td>
+									<td class="num-center">192</td>
+								</tr>
+								<tr>
+									<td>Ingeniería en Producción Industrial</td>
+									<td class="num-center">313</td>
+								</tr>
+								<tr>
+									<td>Gerencia en Mercadeo</td>
+									<td class="num-center">255</td>
+								</tr>									
+								<tr>									
+									<td>Gerencia en Recursos Humanos</td>
+									<td class="num-center">75</td>
+								</tr>	
+								<tr>																
+									<td>Gerencia en Procedimientos y Métodos</td>
+									<td class="num-center">95</td>
+								</tr>
+								<tr>
+									<td>Gerencia en Logística</td>
+									<td class="num-center">122</td>
+								</tr>	
+								<tr>																
+									<td>Contaduría Publica</td>
+									<td class="num-center">602</td>
+								</tr>
+								<tr>
+									<td>Total</td>
+									<td class="num-center">2619</td>
+								</tr>									
+							</tbody>
+						</table>
+
+					<aside class="notes">
+						<p>
+						Se define la poblacion de estudiantes en una cantidad de 2600 alumnos, distribuidos en sus 2 sedes, dividivo en 10 carreras, las cuales 5 pertenecen al area de ingeneria, 4 al area de gerencia y 1 restante al area de contaduria publica.</p>
+					</aside>
+
+					</section>
+					<section id="most">
+						<h2>Muestra</h2>
+						<hr>
+						<img src="img/imagen_formula.png">
+					<aside class="notes">
+						<p>
+							La unidad de analisis, en este caso la poblacion de estudiantes en unitec, sobre la cual fue aplicado el instrumento de recolección de datos, fue calculado mediante la siguiente formula, de muestreo aleatorio simple.
+						</p>
+					</aside>
+
+					</section>
+					<section id="most2">
+						<table class="fragment roll-in">
+							<thead>						
+								<th>Poblacion</th>
+								<th>Cantidad</th>
+								<th>Muestra</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Ingeniería en Información</td>
+									<td class="num-center">248</td>
+									<td class="num-center">11</td>
+								</tr>
+								<tr>																
+									<td>Ingeniería en Mecánica</td>
+									<td class="num-center">315</td>
+									<td class="num-center">11</td>									
+								</tr>	
+								<tr>																
+									<td>Ingeniería en Redes y Comunicaciones</td>
+									<td class="num-center">402</td>
+									<td class="num-center">11</td>
+								</tr>
+								<tr>
+									<td>Ingeniería en Eléctrica</td>
+									<td class="num-center">192</td>
+									<td class="num-center">12</td>
+								</tr>
+								<tr>
+									<td>Ingeniería en Producción Industrial</td>
+									<td class="num-center">313</td>
+									<td class="num-center">11</td>
+								</tr>
+								<tr>
+									<td>Gerencia en Mercadeo</td>
+									<td class="num-center">255</td>
+									<td class="num-center">12</td>
+								</tr>									
+								<tr>									
+									<td>Gerencia en Recursos Humanos</td>
+									<td class="num-center">75</td>
+									<td class="num-center">11</td>
+								</tr>	
+								<tr>																
+									<td>Gerencia en Procedimientos y Métodos</td>
+									<td class="num-center">95</td>
+									<td class="num-center">11</td>									
+								</tr>
+								<tr>
+									<td>Gerencia en Logística</td>
+									<td class="num-center">122</td>
+									<td class="num-center">11</td>									
+								</tr>	
+								<tr>																
+									<td>Contaduría Publica</td>
+									<td class="num-center">602</td>
+									<td class="num-center">12</td>
+								</tr>
+								<tr>
+									<td>Total</td>
+									<td class="num-center">2619</td>
+									<td class="num-center">113</td>									
+								</tr>									
+							</tbody>
+						</table>
+					<aside class="notes">
+						<p>
+							Arrojando como resultado una muestra de 113 estudiantes, lo que representa un 4,31% de la poblacion. de esta misma se selecciona entre 11 y 12 alumnos en cada una de las 10 carreras ofertadas en la unitec
+						</p>
+					</aside>
+
+					</section>
+				</section>
+
+				<section id="fases">
+					<h2 class="fragment roll-in">Fases y Resultados<hr></h2>
+				</section>
+				<section id="nested">
+					<section id="fase1">
+						<h2>Fase I<hr></h2>
+					</section>
+					<section id="definition-data-collecting1" class="cite">
+						<h3>Definición del instrumento de recolección de datos.<hr></h3>
+						<h4>Cuestionario:</h4>
+						<blockquote class="fragment roll-in">
+							“Un género escrito que pretende acumular información por medio de una serie de preguntas sobre un tema determinado para, finalmente, dar puntuaciones globales sobre éste. De tal manera que, podemos afirmar que es un instrumento de investigación que se utiliza para recabar, cuantificar, universalizar y finalmente, comparar la información recolectada.”
+						</blockquote>
+						<h4 class="pull-right fragment roll-in">
+						<p><cite>- Hernández (2004)</cite></p>
+						</h4>						
+					</section>
+
+					<section id="definition-data-collecting2" class="cite">
+						<h2>Definición del instrumento de recolección de datos.<hr></h2>
+						<h4>Escala de Estimación:</h4>
+						<blockquote class="fragment roll-in">
+							“Designan una técnica que comprende un conjunto preestablecido de categorías o de signos para cada uno de los cuales se precisan un juicio ponderado. Este juicio se traduce por enunciados descriptivos, por números, por una forma gráfica o por una combinación de todas esas modalidades”.
+						</blockquote>
+						<h4 class="pull-right fragment roll-in">
+						<p><cite>- Quero (2004)</cite></p>
+						</h4>						
+					</section>
+
+					<section id="item1">
+						<h2>Item 1<hr></h2>
+						<!--table>
+							<tr>
+								<td><canvas id="un-chart" class="fragment" width="800" height="500"></canvas></td>
+								<td><div id="legend-container"></div></td>
+							</tr>
+						</table-->
+						<p>¿La UNITEC satisface las necesidades de desarrollo tecnológico, para la agilización de procesos académicos?</p>
+
+						<div class="row">
+							<canvas id="un-chart" class="fragment col-md-8" width="800" height="450"></canvas>
+							<div id="legend-container" class="col-md-3"></div>	
+						</div>
+			
+					</section>
+
+					<section id="item3-6">
+						<h2>Items 3, 4, 5, 6<hr></h2>
+						<div class="row">
+							<canvas id="dos-chart" class="fragment  text-center" width="1200" height="500"></canvas>
+							<!--div id="legend-container" class="col-md-2"></div-->
+							<aside class="notes">
+								<ol>
+									<li>96%, 4%</li>
+									<li>98%, 2%</li>
+									<li>87%, 13%</li>
+									<li>67%, 33%</li>
+								</ol>
+							</aside>	
+						</div>
+					</section>
+
+					<section id="item7">
+						<h2>Item 7<hr></h2>
+						<p>¿Usted daría uso de una aplicación móvil de la UNITEC para dispositivos móviles con sistema operativo Android?</p>
+						<div class="row">
+							<canvas id="tres-chart" class="fragment col-md-8" width="800" height="450"></canvas>
+							<div id="legend-container" class="col-md-3"></div>	
+						</div>
+					</section>
+
+					<section id="item8">
+						<h2>Item 8<hr></h2>
+						<p>Indique los módulos o lugares que más visita a la hora de hacer uso de la intranet de UNITEC.</p>
+						<div class="row">
+							<canvas id="four-chart" class="fragment col-md-6" width="800" height="500"></canvas>
+							<div id="legend-container" class="col-md-6"></div>	
+						</div>
+						<aside class="notes">
+							<ol>
+								<li>87%</li>
+								<li>76%</li>
+								<li>56%</li>
+								<li>39%</li>
+
+							</ol>
+						</aside>
+					</section>
+
+					<section id="item12">
+						<h2>Item 12<hr></h2>
+						<p>¿La UNITEC brindaría una mejor experiencia a sus estudiantes si contara con una aplicación móvil?</p>
+						<div class="row">
+							<canvas id="five-chart" class="fragment col-md-8" width="800" height="450"></canvas>
+							<div id="legend-container" class="col-md-3"></div>	
+						</div>
+
+					</section>
+
+				</section>
+				
+				<section id="nested">
+					<section id="fase2">
+						<h2>Fase 2: Diseño de la propuesta.<hr></h2>
+						
+					</section>
+
+					<section id="concept-mobile-app">
+						<h2>Concepto de la aplicación móvil. <hr></h2>
+						<ul class="pull-left">
+							<li class="fragment roll-in"><span></span> Interacción con los usuarios</li>
+							<li class="fragment roll-in"><span></span> Gestion de la intranet</li>
+							<li class="fragment roll-in"><span></span> Seguimiento de la información</li>
+							<li class="fragment roll-in"><span></span> Mejorar productividad</li>
+						</ul>
+						<aside class="notes">
+							<p>Aplicación móvil para dispositivos móviles con Sistema Operativo Android, dedicada a la interacción con los usuarios, en donde se gestiona los procesos internos de la intranet UNITEC, permitiendo llevar seguimiento de la información de los mismos, mejorando la productividad de los usuarios.</p>
+						</aside>
+					</section>
+
+					<section id="justify-mobile-app">
+						<h2>Justificación de la aplicación móvil. <hr></h2>
+						<p class="fragment roll-in text-justify">UNITEC está desactualizada tecnológicamente, es por eso que los investigadores encargados de realizar la presente propuesta, desarrollarán una aplicación prototipo altamente funcional, basado en PhoneGap y abierto a la comunidad de UNITEC para la acotación de sugerencias y crecimiento de la misma.</p>
+					</section>
+
+					<section id="fundamentation-mobile-app" class="cite">
+						<h3>Fundamentación teórica de la aplicación móvil.<hr></h3>
+						<blockquote>PhoneGap es un framework que permite el desarrollo de aplicaciones híbridas para sistemas operativos móviles, haciendo uso de tecnologías web como JavaScript, HTML5 y CSS3, ofreciendo una única API basada en JavaScript para acceder a los servicios nativos del dispositivo ”</blockquote>
+						<h4 class="pull-right">
+						<p><cite>- Castillo (2014)</cite></p>
+						</h4>
+						<aside class="notes">
+							Es por ello que se considera PhoneGap como la estrategia adecuada para cumplir con las necesidades de desarrollo de la aplicación para UNITEC, ya que permite el uso de tecnologías multiplataforma. El hecho de desarrollar aplicaciones que no dependen específicamente de una plataforma en concreto garantiza que los cambios de  plataforma no sean problemáticos y acelera exponencialmente el desarrollo para varios dispositivos. 
+						</aside>
+					</section>
+					<section id="fundamentation-mobile-app2">
+						<h3>Fundamentación teórica de la aplicación móvil.<hr></h3>
+						<img src="img/phonegap.png">
+					</section>
+
+					<section id="characteristics-mobile-app">
+						<h2>Características de la aplicación móvil.<hr></h2>
+						<ul class="pull-left">
+							<li class="fragment roll-in"><span></span> Innovación</li>
+							<li class="fragment roll-in"><span></span> Precisión</li>
+							<li class="fragment roll-in"><span></span> Diseño</li>
+							<li class="fragment roll-in"><span></span> Escalable</li>
+							<li class="fragment roll-in"><span></span> Acceso</li>
+							<li class="fragment roll-in"><span></span> Lealtad</li>
+						</ul>
+						<aside class="notes">
+						<ol>
+							<li>Una solución que implica las TIC para resolver un problema</li>
+							<li>Centraliza la información de los usuarios</li>
+							<li>Diseño adaptable a cualquier pantalla</li>
+							<li>Aplicación robusta que permite añadir nuevos módulos sin afetar los existentes</li>
+							<li>Rápido acceso a los módulos de la intranet</li>
+							<li>Los estudiantes se sentirán mas comprometidos con UNITEC</li>
+						</ol>
+						</aside>
+					</section>
+
+					<section id="reach-mobile-app">
+						<h2>Alcance de la aplicación móvil.<hr></h2>
+						<p class="fragment roll-in">La aplicación está pensada como una herramienta que elimine la dependencia de Computadoras o Laptops, y más en enfocarse en el uso de dispositivos móviles</p>
+					</section>
+
+					<section id="users-mobile-app">
+						<h2>Usuarios de la aplicación móvil.<hr></h2>
+						<ul class="pull-left">
+							<li class="fragment roll-in"><span></span> Usuarios directos:</li>
+							<ol>
+								<li class="fragment roll-in">Estudiantes</li>
+								<li class="fragment roll-in">Docentes</li>
+							</ol>
+							<li class="fragment roll-in"><span></span> Usuarios indirectos:</li>
+							<ol>
+								<li class="fragment roll-in">Departamento de Sistemas</li>
+								<li class="fragment roll-in">Departamento de Datos</li>
+							</ol>
+						</ul>
+						<aside class="notes">
+							<ol>
+								<li>Visualizan los datos disponibles en la intranet</li>
+								<li>Suministran información</li>
+								<li>Vela el funcionamiento correcto de la aplicación</li>
+								<li>Disponibilidad de la base de datos</li>
+							</ol>
+						</aside>
+					</section>
+
+					<section id="objetives-mobile-app">
+						<h2>Objetivos de la aplicación móvil.<hr></h2>
+						<ul class="pull-left">
+							<li class="fragment roll-in"><span></span> Definir el contenido que se podrá encontrar en la aplicación móvil para determinar la visualización de los mismos.</li>
+							<li class="fragment roll-in"><span></span> Diseñar una interfaz gráfica con un diseño innovador y adaptable a cualquier dispositivo para ofrecer una nueva experiencia al usuario.</li>
+							<li class="fragment roll-in"><span></span> Desarrollar un prototipo funcional mediante las distintas tecnologías de desarrollo web e incorporarlas con PhoneGap  para su correcto funcionamiento.</li>
+						</ul>
+					</section>
+
+					<section id="requeriments1">
+						<h3>Requerimientos de la aplicación móvil.<hr></h3>
+						<ul class="pull-left">
+							<li class="fragment roll-in"><span></span> Requerimientos funcionales</li>
+							<li class="fragment roll-in"><span></span> Requerimientos no funcionales.</li>
+						</ul>
+						<aside class="notes">
+							<p>Se considieran como coracterisiticas y/o restricciones que debe de poseer la apliacacion movil, para cumplir con el sello de calidad de UNITEC, por lo que se procede  a determinar cuales son los  </p>
+						</aside>
+					</section>
+
+					<section id="requeriments2">
+						<h2>Requerimientos Funcionales.<hr></h2>
+						<ul class="pull-left">
+							<li class="fragment roll-in"><span></span> Validación de Usuarios.</li>
+						</ul>
+						<br>
+							<div class="row">
+							<br>
+								<div class="col-md-6">
+								<ul>
+									<li class="fragment roll-in"><span></span> Docentes.</li>
+									<ol class="fragment roll-in">
+										<li>Inserción de Notas</li>
+										<li>Consulta de Notas</li>
+										<li>Verificar Horario</li>
+										<li>Modificar Datos.</li>
+									</ol>	
+								</ul>								
+								</div>
+								<div class="col-md-6">
+								<ul>
+									<li class="fragment roll-in "><span></span> Alumnos.</li>
+										<ol class="fragment roll-in">
+											<li>Consulta de Notas</li>
+											<li>Verificar Horario</li>
+											<li>Modificar Datos.</li>
+											<li>Creacion de Solicitudes</li>
+										</ol>	
+									</ul>							
+								</div>
+
+							</div>
+
+						<aside class="notes">
+							<ol>
+							   <li>Donde Se realizan las validaciones necesarias, para inicio/cierre sesion, existencia y rol</li>
+							   <li>4 submodulos basicos, insercion de notas, busqueda de notas,ver horario y modf datos personales</li>
+							   <li>igual, 4 submodulos, ver notas, ver horario, modf datos, solicitudes taquilla unica</li>
+							</ol>
+						</aside>
+					</section>
+
+					<section id="requeriments3">
+						<h2>Requerimientos No Funcionales.<hr></h2>
+						<ul class="pull-left">
+							<li class="fragment roll-in"><span></span> Modelamiento logico de la BD Relacional.</li>
+							<li class="fragment roll-in"><span></span> Flujo de datos e información.</li>
+							<li class="fragment roll-in"><span></span> Diagramas de caso de uso.</li>
+							<li class="fragment roll-in"><span></span> Comportamiento entre la interacción del usuario, aplicación y BD.</li>
+						</ul>
+						<aside class="notes">
+							<p>>Actividades donde el usuario no esta involucrado directamente con la funcionalidad del sistema</p
+						</aside>
+					</section>
+
+					<section id="interfazUser">
+						<h2>Diseño de la Interfaz de Usuario.<hr></h2>
+						<div class="row">
+							<ul class="pull-left col-md-7">
+								<li class="fragment roll-in"><span></span> Responsive Web Design.</li>
+								<li class="fragment roll-in"><span></span> Material Design</li>
+								<li class="fragment roll-in"><span></span> Diseño Fluido</li>
+								<li class="fragment roll-in"><span></span> Media Queries</li>
+							</ul>		
+
+						<p class="fragment roll-in col-md-4 text-justify">Mobile First: Consiste  en diseñar primero para  dispositivos moviles y luego adaptar el contenido a las demas resoluciones y equipos que lo necesiten.</p>					
+						</div>
+
+
+						<aside class="notes">
+							<p>Para que el contenido se adapde a cualquier dispositivos, se utilizan 2 factores claves, el diseno fluido y los media queiries , pero principalmente la metodologia del senor LUKE Wreblewsky</p>
+						</aside>
+					</section>
+
+					<section id="desarrolloApp">
+						<h3>Desarrollo de la aplicación Prototipo<hr></h3>
+						<img src="img/Capas.png" alt="" width="600px" height="550px">
+						<aside class="notes">
+							<p class="fragment roll-in">
+							Phonegap es la encargada de hacer el procesamiento de la interfaz grafica y el procesamiento de contenido mediante la interpretacion  de los lenguajes de desarollo web, como HTML, CSS, Js, ejerciendo tambien una comunicacion constante con el la capa de BD mediante el uso de controladores establecidos mediante PHP, creando un ecosistema fluido entre aplicacion y contenido.
+						</p>
+						</aside>
+					</section>
+				</section>
+				
+				<section id="nested">
+					<section id="fase3">
+						<h2>Fase 3: Factibilidad<hr></h2>
+					</section>
+					<section id="costs">
+						<h2>Cuadro de costos incurridos<hr></h2>
+						<table class="fragment roll-in">
+							<thead>						
+								<th>Recursos</th>
+								<th>Descripción</th>
+								<th>Cantidad</th>
+								<th>Costo</th>
+								<th>Total</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="4" class="num-center">Técnico</td>
+									<td class="num-center">Laptop Procesador Core i7, Disco Duro 650GB, 6GB Ram, Ubuntu 14.10</td>
+									<td class="num-center">1 unidad</td>
+									<td class="num-center">50.000BsF.</td>
+									<td class="num-center">50.000BsF.</td>
+								</tr>
+								<tr>																
+									<td class="num-center">Laptop Procesador Core i5, Disco Duro 750GB, 4GB Ram, Ubuntu 14.04</td>
+									<td class="num-center">1 unidad</td>
+									<td class="num-center">25.000BsF.</td>
+									<td class="num-center">25.000BsF.</td>									
+								</tr>
+								<tr>
+									<td class="num-center">Conexión a Internet</td>
+									<td class="num-center">2 unidades</td>
+									<td class="num-center">210BsF.</td>
+									<td class="num-center">420BsF.</td>
+								</tr>
+								<tr>
+									<td class="num-center">Servidor de hospedaje</td>
+									<td class="num-center">1 unidad</td>
+									<td class="num-center">450BsF.</td>
+									<td class="num-center">450BsF.</td>
+								</tr>
+								<tr></tr>
+							</tbody>
+						</table>
+					</section>
+					
+					<section id="costs2">
+						<table class="fragment roll-in">
+							<thead>						
+								<th>Recursos</th>
+								<th>Descripción</th>
+								<th>Cantidad</th>
+								<th>Costo</th>
+								<th>Total</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="2" class="num-center">Humano</td>
+									<td class="num-center">Programador</td>
+									<td class="num-center">2 * 20 horas C/U</td>
+									<td class="num-center">210BsF.</td>
+									<td class="num-center">8400BsF.</td>
+								</tr>
+								<tr>																
+									<td class="num-center">Analista de Bases de Datos</td>
+									<td class="num-center">4 horas</td>
+									<td class="num-center">200BsF.</td>
+									<td class="num-center">800BsF.</td>									
+								</tr>
+								<tr>
+									<td class="num-center" rowspan="2">Materiales</td>
+									<td class="num-center">Resma de papel carta</td>
+									<td class="num-center">1 unidad</td>
+									<td class="num-center">320BsF.</td>
+									<td class="num-center">320BsF.</td>
+								</tr>
+								<tr>
+									<td class="num-center">Boligrafos</td>
+									<td class="num-center">2 unidades</td>
+									<td class="num-center">35BsF.</td>
+									<td class="num-center">70BsF.</td>
+								</tr>
+								<tr>
+									<td class="num-center" rowspan="5">Logístico</td>
+									<td class="num-center">PHP</td>
+									<td class="num-center" rowspan="5">1 unidad</td>
+									<td class="num-center" rowspan="5">0BsF.</td>
+									<td class="num-center" rowspan="5">0BsF.</td>
+								</tr>
+								<tr>
+									<td class="num-center">HTML</td>
+								</tr>
+								<tr>
+									<td class="num-center">CSS</td>
+								</tr>
+								<tr>
+									<td class="num-center">MySQL</td>
+								</tr>
+								<tr>
+									<td class="num-center">JavaScript</td>
+								</tr>
+								<tr></tr>
+							</tbody>
+						</table>
+					</section>
+					<section id="benefits">
+						<h2>Establecimiento de beneficios cualitativos<hr></h2>
+						<p class="text-justify fragment roll-in">
+							Al momento de aplicar e implementar la aplicación móvil, <strong>no</strong> se podrá percibir los beneficios cuantitativos que puedan ser plasmados de manera usual mediante la razón costo-beneficio, sino la fundamentación de beneficios cualitativos dentro de la institución caso de estudio.[...] 
+						</p>
+						<aside class="notes">
+							<p>
+							De este mismo modo, UNITEC  contara con un nuevo servicio referido a las TIC’s, lo que demostraría que la institución se compromete en el desarrollo de nuevas técnicas y aprecio a las ideas de los estudiantes, lo que generara un prestigio dentro y fuera de UNITEC.
+							</p>
+						</aside>
+					</section>	
+				</section>
+				<section id="nested">
+					<section id="conclu">
+						<h2>Conclusión</h2>
+						<hr>
+						<ul>
+							<li class="fragment roll-in"> <span></span> Licencia MIT</li>
+							<li class="fragment roll-in"> <span></span> Tabulaciones</li>
+							<li class="fragment roll-in"> <span></span> Beneficios</li>
+						</ul>
+						<aside class="notes">
+						<ol>
+							<li>Cualquier persona puede copiar, modificar y publicar nuevas versiones del trabajo, lo que reduce el precio de mantenimiento e implementación</li>
+							<li>Tabulaciones de costos operativos y costos de desarrollo, los cuales demostraron ser menores a los beneficios directos que trae la aplicación</li>
+							<li>Mejora de la experiencia del cliente, agilización de las solicitudes administrativas</li>
+						</ol>
+					</section>
+					<section id="recom">
+						<h2>Recomendaciones</h2>
+						<hr>
+						<ul>
+							<li class="fragment roll-in"><span></span> La Universidad Tecnológica del Centro debe pasar paulatinamente de la fase de prototipo hasta implementar completamente la aplicación propuesta.</li>
+							<li class="fragment roll-in"><span></span> Fomentar a los estudiantes de Ingeniería en Información y Ingeniería en Redes y Telecomunicaciones</li>
+							<li class="fragment roll-in"><span></span> Inversión de parte de la universidad.</li>
+						</ul>
+						<aside class="notes">
+							<ol>
+								<li>Para disfrutar de los beneficios que significarían el uso de esta aplicación</li>
+								<li>A continuar a investigar y desarrollar nuevas tecnologias para el uso de su alma mater</li>
+								<li>La universidad debe invertir mas recursos humanos y economicos para el desarrollo de nuevas tecnologías, además de dar ayuda a los estudiantes.</li>
+							</ol>
+						</aside>
+					</section>
+					<section>
+						<h1> GRACIAS. <hr></h1>	
+					</section>
+				</section>
+				<section>
+					<h2>Preguntas y Respuestas <hr></h2>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="js/Chart.js"></script>
+		<script src="js/mans.js"></script>
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+		    width: 1366,
+		    height: 768,
+        mouseWheel: true,
+        viewDistance: 3,
+				transition: 'linear',
+        transitionSpeed: 'slow',
+        backgroundTransition: 'slide',
+
+				//transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
